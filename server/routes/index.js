@@ -27,13 +27,13 @@ function findAllBlobs(req, res) {
 
 // *** get SINGLE blobs *** //
 function findBlobById(req, res) {
-  Blob.findById(req.params.id, function(err, blob) {
-    if(err) {
-      res.json({'ERROR': err});
-    } else {
-      res.json(blob);
-    }
-  });
+  // Blob.findById(req.params.id, function(err, blob) {
+  //   if(err) {
+  //     res.json({'ERROR': err});
+  //   } else {
+  //     res.json(blob);
+  //   }
+  // });
 }
 
 // *** post ALL blobs *** //

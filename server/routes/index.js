@@ -16,13 +16,13 @@ router.delete('/blob/:id', deleteBlob);
 
 // *** get ALL blobs *** //
 function findAllBlobs(req, res) {
-  // Blob.find(function(err, blobs) {
-  //   if(err) {
-  //     res.json({'ERROR': err});
-  //   } else {
-  //     res.json(blobs);
-  //   }
-  // });
+  Blob.find(function(err, blobs) {
+    if(err) {
+      res.json({'ERROR': err});
+    } else {
+      res.json(blobs);
+    }
+  });
 }
 
 // *** get SINGLE blobs *** //

@@ -8,11 +8,6 @@ node_js:
 services:
   - 'mongodb'
 
-before_script:
-  - 'stuff'
-
 script:
-  - jasmine
+  - mocha
 
-after_script:
-  - 'after_script'
